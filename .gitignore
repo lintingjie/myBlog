@@ -1,15 +1,55 @@
- # Windows:
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Python:
 *.py[cod]
+
+test.db
+test.txt
+sina.html
+
+# C extensions
 *.so
+
+# Packages
 *.egg
 *.egg-info
-migrations/
-.idea/
-logs/
-static/images/logo.png
-web_sso/migrations/0001_initial.py
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+######################
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+dist
+MANIFEST
+venv
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
