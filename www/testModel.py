@@ -6,7 +6,7 @@ from www.models import User
 
 async def test(loop):
     await orm.create_pool(loop=loop, user='root', password='root', db='awesome')
-    u = User(name='test2', email='test2@test.com', passwd='test', image='about:blank')
+    u = User(name='test1', email='test1@test.com', passwd='test', image='about:blank')
     await u.save()
     await orm.destory_pool()
 
@@ -19,7 +19,7 @@ async def find(loop):
 
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(find(loop))
+loop.run_until_complete(test(loop))
 loop.close()
 
 # async def test(loop):
